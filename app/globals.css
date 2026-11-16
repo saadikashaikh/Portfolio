@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fbfaf6;
+  --color-ink: #111111;
+  --color-lime: #c8f169;
+  --color-lilac: #c3b3ff;
+  --color-coral: #ff8a65;
+  --color-sky: #92d8ff;
+  --color-sun: #ffd84d;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --shadow-hard: 4px 4px 0 0 #111111;
+  --shadow-hard-lg: 7px 7px 0 0 #111111;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-rev: marquee 38s linear infinite reverse;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  background-image: radial-gradient(rgba(17, 17, 17, 0.12) 1px, transparent 1px);
+  background-size: 22px 22px;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+section[id] {
+  scroll-margin-top: 1.5rem;
+}
+
+/* Highlighter-pen underline. Change colour with style={{ "--mk": "white" }} */
+.marker {
+  background-image: linear-gradient(
+    transparent 58%,
+    var(--mk, var(--color-lime)) 58%,
+    var(--mk, var(--color-lime)) 92%,
+    transparent 92%
+  );
+  padding: 0 0.12em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
