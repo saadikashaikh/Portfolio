@@ -6,7 +6,7 @@ export const profile = {
   education: "BCA · KPB Hinduja College of Commerce, YCMOU",
   about:
     "Frontend Engineer with 1.6+ years of experience building scalable web applications and enterprise FinTech solutions using JavaScript, React.js, Next.js, and TypeScript. Experienced in frontend architecture, API integration, and team leadership, with a strong focus on clean code, performance, and creating seamless user experiences.",
-  email: "shaikhsaadika@email.com", 
+  email: "shaikhsaadika@gmail.com", 
   github: "https://github.com/saadikashaikh", 
   linkedin: "https://www.linkedin.com/in/saadikashaikh",
   resume: "/Saadika Shaikh Resume.pdf", 
